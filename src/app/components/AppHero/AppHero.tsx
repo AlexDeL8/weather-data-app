@@ -1,7 +1,12 @@
+import styles from "../../page.module.css"
 import AppGreeting from "./AppGreeting";
+import AppLogo from "./AppLogo";
 
 export default function AppHero(): React.JSX.Element {
     return(
-        <AppGreeting />
+        <div className={styles.appHero}>
+            <AppGreeting />
+            <AppLogo />
+        </div>
     )
 }
