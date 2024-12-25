@@ -49,14 +49,21 @@ table {
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --font-color: #505050;
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html,
@@ -66,17 +73,11 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--font-color);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "FreeMono", monospace, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -84,8 +85,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */

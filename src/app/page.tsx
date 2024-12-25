@@ -3,7 +3,7 @@ import AppHero from "./components/AppHero/AppHero";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div className={styles.home}>
       <nav>
         {/* <WeathAppBar /> */}
       </nav>
