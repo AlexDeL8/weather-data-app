@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import styles from "../../page.module.css"
+import styles from "../../../styles/hero.module.css"
 import AppGreeting from "./AppGreeting";
 import AppLogo from "./AppLogo";
 
