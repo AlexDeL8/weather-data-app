@@ -9,12 +9,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+}
+
+.appHeroVisable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 1s ease-in;
+  opacity: 1;
 }
 
 .logo {
   height: 10em;
   width: 10em;
   color: var(--logo-color);
+}
+
+.logo svg {
+  height: auto;
+  width: auto;
 }
 
 .greeting {
