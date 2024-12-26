@@ -1,5 +1,6 @@
 import styles from "../styles/page.module.css";
 import AppHero from "./components/AppHero/AppHero";
+import SearchBar from "./components/SearchBar/SearchBar";
 
 export default function Home() {
   return (

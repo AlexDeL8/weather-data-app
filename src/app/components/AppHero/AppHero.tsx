@@ -13,7 +13,7 @@ export default function AppHero(): React.JSX.Element {
     }, [])
 
     return(
-        <div className={visable ? styles.appHeroVisable : styles.appHero}>
+        <div className={visable ? `${styles.appHero} ${styles.visible}` : styles.appHero}>
             <AppGreeting />
             <AppLogo />
         </div>

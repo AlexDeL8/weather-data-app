@@ -5,11 +5,8 @@
   opacity: 0;
 }
 
-.appHeroVisable {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: opacity 0.75s ease-in;
+.visible {
+  transition: opacity 0.25s ease-in;
   opacity: 1;
 }
 

@@ -1,0 +1,8 @@
+.weatherSearch {
+    opacity: 0;
+}
+
+.visible {
+    transition: opacity 0.25s ease-in;
+    opacity: 1;
+}
