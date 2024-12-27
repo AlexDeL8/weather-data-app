@@ -24,6 +24,7 @@
 .greeting {
   font-size: 3em;
   font-weight: 550;
+  text-align: center;
   color: font-color
 }
 
