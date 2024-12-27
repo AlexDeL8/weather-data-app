@@ -1,5 +1,6 @@
-import styles from "./page.module.css";
+import styles from "../styles/page.module.css";
 import AppHero from "./components/AppHero/AppHero";
+import SearchBar from "./components/SearchBar/SearchBar";
 
 export default function Home() {
   return (
@@ -9,8 +10,8 @@ export default function Home() {
       </nav>
       <main className={styles.main}>
         <AppHero />
-        {/* <SearchBar />
-        <WeatherContent /> */}
+        <SearchBar />
+        {/* <WeatherContent /> */}
       </main>
       <footer className={styles.footer}>
         {/* <Footer /> */}
