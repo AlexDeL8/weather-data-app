@@ -18,19 +18,22 @@ export default function SearchBar(): React.JSX.Element {
     }
 
     return(
-        <div className={visible ? `${styles.weatherSearch} ${styles.visible}` : styles.weatherSearch}>
-            <SearchBarHeading />
-            <div className={styles.searchBarDiv}>
-                {/* Magnifying glass */}
-                <form className={styles.searchForm} action="/search">
-                    <FontAwesomeIcon icon={fas.faMagnifyingGlass} onClick={() => weatherSearch()} />
-                    <input
-                        className={styles.searchBar}
-                        type="text"
-                        name="weatherLocation"
-                        placeholder="Search a City or Zip Code..." />
-                </form>
+        <>
+            <div className={visible ? `${styles.weatherSearch} ${styles.visible}` : styles.weatherSearch}>
+                <SearchBarHeading />
             </div>
-        </div>
+            <div className={visible ? `${styles.weatherSearch} ${styles.visible}` : styles.weatherSearch}>
+                <div className={styles.searchBarDiv}>
+                    <form className={styles.searchForm} action="/search">
+                        <FontAwesomeIcon className={styles.searchIcon} icon={fas.faMagnifyingGlass} onClick={() => weatherSearch()} />
+                        <input
+                            className={styles.searchBar}
+                            type="text"
+                            name="weatherLocation"
+                            placeholder="Search City or Zip Code..." />
+                    </form>
+                </div>
+            </div>
+        </>
     )
 }
