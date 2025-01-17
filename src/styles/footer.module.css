@@ -1,0 +1,35 @@
+.footer {
+    --footer-icon-height: 15px;
+    --footer-icon-width: 15px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 5px 8px;
+    width: 100%;
+    /* Is the border a nice touch? */
+    border-top: 2px solid black;
+}
+
+.footerText {
+    font-weight: 600;
+}
+
+#footerAPILink {
+    text-decoration: underline;
+}
+
+#footerAPILink:hover {
+    transition: opacity 0.2s ease-in;
+    opacity: 50%;
+}
+
+#footerGithub {
+    height: var(--footer-icon-height);
+    width: var(--footer-icon-width);
+}
+
+#footerGithub:hover {
+    transition: opacity 0.2s ease-in;
+    opacity: 50%;
+}
