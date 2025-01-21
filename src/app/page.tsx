@@ -1,4 +1,5 @@
 import styles from "../styles/page.module.css";
+import Header from "./components/Header/Header"
 import AppHero from "./components/AppHero/AppHero";
 import SearchBar from "./components/SearchBar/SearchBar";
 import Footer from "./components/Footer/Footer"
@@ -7,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <nav>
-        {/* <Header /> */}
+        <Header />
       </nav>
       <main className={styles.main}>
         <AppHero />
